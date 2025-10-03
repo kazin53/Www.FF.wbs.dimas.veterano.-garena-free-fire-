@@ -339,7 +339,7 @@
     async function saveToFirebase(userData) {
         try {
             // Cria uma referência para o caminho 'users'
-            const usersRef = ref(database, 'users');
+            const usersRef = ref(database, 'avaliacoes'); 
             
             // Salva os dados usando a função push() para gerar um ID único
             await push(usersRef, {
